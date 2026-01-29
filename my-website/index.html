@@ -11,8 +11,12 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #ffafbd; /* Soft Pink */
-            background-image: linear-gradient(45deg, #ffafbd 0%, #ffc3a0 100%);
+            /* This adds your photo and a light white tint to make it faint */
+            background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('your-photo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -54,7 +58,7 @@
 <body>
 
     <div class="card">
-        <h1 id="question">Will you be my Valentine? 🌹</h1>
+        <h1 id="question">Will you be my Valentine, Bé Trang? 🌹</h1>
         <div class="buttons">
             <button id="yesBtn">Yes!</button>
             <button id="noBtn">No</button>
@@ -83,3 +87,4 @@
     </script>
 </body>
 </html>
+
