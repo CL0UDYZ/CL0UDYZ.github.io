@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    nav a { margin-left: 12px; text-decoration: none; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin: 16px 0; }
+    button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>August's Website</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="card">
+    <h2>About</h2>
+    <p>Write a short intro about yourself here.</p>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <ul>
+      <li>Project 1 — what it does</li>
+      <li>Project 2 — what it does</li>
+      <li>Project 3 — what it does</li>
+    </ul>
+    <button id="helloBtn">Click me</button>
+    <p id="msg"></p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: you@example.com</p>
+    <p>LinkedIn: your link</p>
+  </section>
+
+  <script>
+    const btn = document.getElementById("helloBtn");
+    const msg = document.getElementById("msg");
+    btn.addEventListener("click", () => {
+      msg.textContent = "Hello! Your website is working ✅";
+    });
+  </script>
+</body>
+</html>
